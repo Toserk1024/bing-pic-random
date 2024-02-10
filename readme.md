@@ -1,5 +1,6 @@
+<strong>图片数据来源：</strong>[Bing-Wallpaper-Action](https://github.com/zkeq/Bing-Wallpaper-Action)
 ### 一.调用方式
- <figure><table><thead><tr><th>参数</th><th>是否必填</th><th>值</th><th>输出</th></tr></thead><tbody><tr><td rowspan="4">type</td><td rowspan="4">否</td><td>无（默认）</td><td>1920*1080</td></tr><tr><td>m</td><td>1080*1920</td></tr><tr><td>uhd</td><td>原图</td></tr><tr><td>auto</td><td>UA自动判断</td></tr><tr><td rowspan="2">return</td><td rowspan="2">否</td><td>无（默认）</td><td>302重定向</td></tr><tr><td>server</td><td>直接输出</td></tr></tbody></table><figcaption>无效的参数将归为默认值<br>https://blog.toserk.eu.org/article/205/</figcaption></figure>
+ <figure><table><thead><tr><th>参数</th><th>是否必填</th><th>值</th><th>输出</th></tr></thead><tbody><tr><td rowspan="4">type</td><td rowspan="4">否</td><td>无（默认）</td><td>1920*1080</td></tr><tr><td>m</td><td>1080*1920</td></tr><tr><td>uhd</td><td>原图</td></tr><tr><td>auto</td><td>UA自动判断</td></tr><tr><td rowspan="2">return</td><td rowspan="2">否</td><td>无（默认）</td><td>302重定向</td></tr><tr><td>server</td><td>直接输出</td></tr></tbody></table><figcaption>无效的参数将归为默认值<br>https://blog.toserk.top/article/205/</figcaption></figure>
  
 ### 二.部署方式
  #### 1.PHP虚拟主机：
