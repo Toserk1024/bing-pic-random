@@ -1,14 +1,10 @@
 <?php
 $type = @$_REQUEST['type'];
 $return = @$_REQUEST['return'];
-$file_path = "bing-ids.txt";
-$file = fopen($file_path, "r");
-$file_content = fread($file, filesize($file_path));
-fclose($file);
-$links = explode("\n", $file_content);
-$random_index = array_rand($links, 1);
-$random_name = $links[$random_index];
-$url = 'https://cn.bing.com/th?id=' . $random_name;
+
+$ids = explode("\n", file_get_contents('bing-ids.txt'));
+$random_id = $ids[array_rand($ids, 1)];
+$url = 'https://cn.bing.com/th?id=' . $random_id;
 
 if ($type === 'auto') {
     $ua = $_SERVER['HTTP_USER_AGENT'];
@@ -35,4 +31,3 @@ if ($return === 'server') {
 } else {
     header("Location: {$random}", true, 302);
 }
-?>
